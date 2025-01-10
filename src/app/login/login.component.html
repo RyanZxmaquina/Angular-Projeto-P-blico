@@ -1,0 +1,54 @@
+<div class="container">
+    <!-- No seu HTML dentro do <head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <div class="welcome-section">
+      <h1>Bem vindo ao nosso site</h1>
+      <p>
+        Faça login para ter todas as vantagens!!! 
+        Redes sociais:
+      </p>
+      <div class="social-media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="login-section">
+      <h2>Login</h2>
+      <form (submit)="login(form)" #form="ngForm">
+        <label for="email_address">Endereço de email:</label>
+        <input
+          type="email"
+          id="email_address"
+          name="email_address"
+          ngModel
+          required
+        />
+        <label for="user_password">Senha:</label>
+        <input
+          type="password"
+          id="user_password"
+          name="user_password"
+          ngModel
+          required
+        />
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Lembrar senha</label>
+        </div>
+        <button type="submit">Login</button>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        <p class="create-account">
+          Criar uma nova conta <a href="#">Cadastre-se</a>
+        </p>
+        <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+        <p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+      </form>
+    </div>
+  </div>
+  

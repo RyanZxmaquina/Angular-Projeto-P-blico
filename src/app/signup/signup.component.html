@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="welcome-section">
+      <h1>Bem vindo ao nosso site, Cadastre-se</h1>
+      <p>Conheça nossas redes sociais</p>
+      <div class="social-media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="signup-section">
+      <h2>Formulário de cadastro</h2>
+      <form (submit)="signup(form)" #form="ngForm">
+        <label for="fullname">Nome completo:</label>
+        <input type="text" id="fullname" name="fullname" ngModel required>
+        <label for="email_address">Endereço de email:</label>
+        <input type="email" id="email_address" name="email_address" ngModel required>
+        <label for="user_password">Senha:</label>
+        <input type="password" id="user_password" name="user_password" ngModel required>
+        <button type="submit">Cadastre-se</button>
+        <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+        <p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+      </form>
+    </div>
+  </div>
+  

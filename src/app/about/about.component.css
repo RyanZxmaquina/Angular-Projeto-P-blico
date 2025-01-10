@@ -1,0 +1,63 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('https://i.pinimg.com/originals/19/10/63/191063a8fc5a4da4eccdb6e406c52089.gif'); /* URL do GIF de água verde */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Texto branco para melhor contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2ecc71;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animated-text:hover {
+    transform: scale(1.1); /* Ampliação do texto ao passar o mouse */
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05); /* Leve ampliação ao passar o mouse */
+  }
+  
