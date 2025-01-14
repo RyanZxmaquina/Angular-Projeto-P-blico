@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +21,8 @@
     background-image: url('https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif');
     background-size: cover;
     background-position: center;
-    color: #fff; /* Texto branco para melhor contraste */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidade */
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
@@ -35,7 +35,7 @@
   }
   
   .animated-text:hover {
-    transform: scale(1.1); /* Ampliação do texto ao passar o mouse */
+    transform: scale(1.1);
   }
   
   main p {
@@ -58,6 +58,6 @@
   
   .btn:hover {
     background-color: #2980b9;
-    transform: scale(1.05); /* Leve ampliação ao passar o mouse */
+    transform: scale(1.05); 
   }
   
