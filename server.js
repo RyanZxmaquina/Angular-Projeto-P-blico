@@ -32,7 +32,6 @@ app.post('/signup', (req, res) => {
   // Log para verificar se os dados estão chegando corretamente
   console.log('Dados recebidos no signup:', req.body);
 
-  // Certifique-se de que user_password não está vazio ou undefined
   if (!user_password) {
     console.error('Password is missing in the request body');
     return res.status(400).send('Password is required');
