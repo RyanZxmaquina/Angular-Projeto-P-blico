@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { UserService } from '../user.service'; // Não esqueça de importar o UserService
+import { UserService } from '../user.service'; 
 
 @Component({
   selector: 'app-login',
